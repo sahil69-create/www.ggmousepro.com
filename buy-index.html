@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Mouse Pro - Buy Access Codes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.dl.dropboxusercontent.com/scl/fi/3omcfq74pwvm4v0x6z6f0/GG-Mouse-Pro.png?rlkey=d1dtq8gjq0699aibzwlyfxzyv&st=st3zncw9&dl=0" alt="GG Mouse Pro Logo" width="60">
+            GG Mouse Pro 2
+        </div>
+        <div class="menu-toggle">☰</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about-index.html">About</a>
+            <a href="features-index.html">Features</a>
+            <a href="tournaments-index.html">Tournaments</a>
+            <a href="tutorials-index.html">Tutorials</a>
+            <a href="download-index.html">Download</a>
+            <a href="buy-index.html">Buy Codes</a>
+            <a href="contact-index.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container buy-container">
+        <div class="text-section">
+            <div class="heading">Choose Your Plan</div>
+            <div class="subheading">
+                Get instant access to GG Mouse Pro with our flexible subscription plans. Choose the package that best suits your gaming needs.
+            </div>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="plan-name">Starter</div>
+                <div class="plan-price">$0.59</div>
+                <div class="plan-duration">per month</div>
+                <ul class="plan-features">
+                    <li>Basic Mouse & Keyboard Support</li>
+                    <li>Standard Sensitivity Settings</li>
+                    <li>Basic Game Profiles</li>
+                    <li>Community Support</li>
+                </ul>
+                <button class="buy-button">Get Started</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="best-value">BEST VALUE</div>
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">$4.99</div>
+                <div class="plan-duration">per year</div>
+                <ul class="plan-features">
+                    <li>Advanced Mouse & Keyboard Support</li>
+                    <li>Custom Sensitivity Profiles</li>
+                    <li>Advanced Game Profiles</li>
+                    <li>Priority Support</li>
+                    <li>Tournament Mode Access</li>
+                </ul>
+                <button class="buy-button">Go Pro</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-name">Elite</div>
+                <div class="plan-price">$11.99</div>
+                <div class="plan-duration">lifetime</div>
+                <ul class="plan-features">
+                    <li>Premium Mouse & Keyboard Support</li>
+                    <li>Advanced Macro Configuration</li>
+                    <li>Unlimited Game Profiles</li>
+                    <li>24/7 Premium Support</li>
+                    <li>Tournament Mode Access</li>
+                    <li>Early Access Features</li>
+                </ul>
+                <button class="buy-button">Join Elite</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="https://www.dl.dropboxusercontent.com/scl/fi/ecyqyekn1q74e1n2u6vvf/Fonts-Used-In-Famous-Logos-With-Download-Links.jpeg?rlkey=9kgmdognzy9z9jtlb81muf5v2&st=kstcc5io&dl=0" alt="Visa">
+            </div>
+            <div class="payment-method">
+                <img src="https://www.dl.dropboxusercontent.com/scl/fi/a1u4xw9yn9i3q99y4rz8k/Mastercard.jpeg?rlkey=ldutu4safpbzxrtpkkdhondse&st=1ntkq54a&dl=0" alt="Mastercard">
+            </div>
+            <div class="payment-method">
+                <img src="https://www.dl.dropboxusercontent.com/scl/fi/ck05ay7dwwk48z6m9l102/Browse-thousands-of-Logo-Animation-images-for-design-inspiration.jpeg?rlkey=voi5nuelo43qkzrjzgplgmhlz&st=yust3q5k&dl=0" alt="PayPal">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Page specific animations
+        gsap.from('.heading', {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.subheading', {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.3,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.pricing-card', {
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.pricing-grid',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+
+        gsap.from('.payment-methods', {
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.payment-methods',
+                start: 'top 90%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    </script>
+</body>
+</html>

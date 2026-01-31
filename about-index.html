@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Mouse Pro - About Us</title>
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Page Specific Styles */
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .about-content {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .about-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 400px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .milestone-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .milestone-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .milestone-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--neon-blue);
+            margin-bottom: 10px;
+        }
+
+        .milestone-text {
+            color: #cccccc;
+        }
+
+        .team-section {
+            margin-top: 60px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 3px solid var(--neon-blue);
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--neon-blue);
+            margin-bottom: 10px;
+        }
+
+        .team-role {
+            color: var(--neon-purple);
+            margin-bottom: 15px;
+        }
+
+        .team-bio {
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+
+            .milestone-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.dl.dropboxusercontent.com/scl/fi/3omcfq74pwvm4v0x6z6f0/GG-Mouse-Pro.png?rlkey=d1dtq8gjq0699aibzwlyfxzyv&st=st3zncw9&dl=0" alt="GG Mouse Pro Logo">
+            GG Mouse Pro 2
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about-index.html">About</a>
+            <a href="features-index.html">Features</a>
+            <a href="tournaments-index.html">Tournaments</a>
+            <a href="tutorials-index.html">Tutorials</a>
+            <a href="download-index.html">Download</a>
+            <a href="buy-index.html">Buy Codes</a>
+            <a href="contact-index.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-section">
+            <div class="heading">Our Story</div>
+            <div class="subheading">
+                From a passion project to the leading mobile gaming enhancement tool, discover the journey of GG Mouse Pro.
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-content">
+                <p>GG Mouse Pro is a simple yet powerful tool designed to give mobile gamers a PC-like experience using mouse and keyboard controls – without the need for complex setups or rooting.</p>
+                <p>It all started in 2024 when we noticed how limited touch controls can be, especially in fast-paced or competitive games. So, we built an easy-to-use solution that works for everyone – no extra hardware or PC required.</p>
+                <p>Today, thousands of gamers rely on GG Mouse Pro for smoother gameplay and better control. We manually deliver premium codes within 24 hours and continuously update the app based on user feedback to improve performance and compatibility.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://www.dl.dropboxusercontent.com/scl/fi/y68ws5tlyytssko85ef9v/shenzen.png?rlkey=b7zvhg9tvob8tke3xb29erul3&st=8wcg7aw7&dl=0" alt="GG Mouse Pro Team">
+            </div>
+        </div>
+
+        <div class="milestone-grid">
+            <div class="milestone-card">
+                <div class="milestone-number">1M+</div>
+                <div class="milestone-text">Active Users</div>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-number">150+</div>
+                <div class="milestone-text">Countries</div>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-number">4.1★</div>
+                <div class="milestone-text">App Rating</div>
+            </div>
+            <div class="milestone-card">
+                <div class="milestone-number">24/7</div>
+                <div class="milestone-text">Support</div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="heading">Meet Our Team</div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/vubk1xo1o3f0lvtoesalm/logogg.png?rlkey=l7yso3a1qzpza4f1tp63ctznc&st=gsaklmze&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Jason</div>
+                    <div class="team-role">Founder & Visionary Lead</div>
+                    <div class="team-bio">A gaming innovator and the driving force behind GG Mouse Pro. Jason leads strategy, innovation, and long-term growth across all operations.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/0jq34vx5o782std23v4v0/FRAJOLA.jpg?rlkey=yvxrxf7vp1dw9wsr5h4q349cp&st=p7irtweg&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">FRAJOLA ON</div>
+                    <div class="team-role">Community Moderator</div>
+                    <div class="team-bio">FRAJOLA ensures our Discord and tournament chats remain respectful, active, and aligned with the GG brand values.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/vubk1xo1o3f0lvtoesalm/logogg.png?rlkey=l7yso3a1qzpza4f1tp63ctznc&st=gsaklmze&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Serena Zhou</div>
+                    <div class="team-role">Community & Support Head</div>
+                    <div class="team-bio">Serena codes the core of GG Mouse Pro. With 10+ years in tech, she ensures top-tier performance and a seamless user experience.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/dl1gipci7r2vawggr1lf9/JorginhoO.png?rlkey=aikcn97lv2226glccjw35hnwz&st=xcn7iv6c&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Jorge Fernando</div>
+                    <div class="team-role">Senior Software Engineer</div>
+                    <div class="team-bio">Jorge Fernando helps users with account issues, feature questions, and guides them through the premium upgrade process with patience and care.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/hs0o8853eq7zkv7dnzdy9/Ruann.jpg?rlkey=vszcoxy5iyopkymxxzyhwqxza&st=xv9poce4&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Ruann Ferreira Gomes</div>
+                    <div class="team-role">Product Sales Lead</div>
+                    <div class="team-bio">Ruann Ferreira Gomes handles product outreach, customer queries, and premium code delivery, making sure users stay informed and satisfied.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/bbqz02k3zt8xb8ph5744g/Jota-Schenatto.png?rlkey=ojpyw3gv1owiksri41vr9nlg7&st=007hkrm5&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Jota Schenatto</div>
+                    <div class="team-role">Support Executive</div>
+                    <div class="team-bio">Jota Schenatto is the first responder to user issues—resolving queries, collecting feedback, and helping users enjoy a smooth experience.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/9ippi4eb5rz1w2mjgsc0z/Jean.jpg?rlkey=t49f46r9wz0l21b7wj0g3b5nq&st=0njnugu5&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Jeanderson Silva</div>
+                    <div class="team-role">Customer Support Assistant</div>
+                    <div class="team-bio">Managing premium deliveries, user support, and social coordination — Jean helps GG Mouse Pro users get the best experience, every day.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/2r4h93ac0h971vk7l6hiq/author.jpg?rlkey=n5y772k2m2r4zzfd4bqb5bpp9&st=rvgca6nt&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Author</div>
+                    <div class="team-role">Customer Support Assistant</div>
+                    <div class="team-bio">Author helps users with account issues, feature questions, and guides them through the premium upgrade process with patience and care.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://www.dl.dropboxusercontent.com/scl/fi/c8anj2pvy5rkcnt3mwtel/ME.jpg?rlkey=0uf0njj1sah73hvwwtrvk6id8&st=hyxb5qu2&dl=0" alt="Team Member">
+                    </div>
+                    <div class="team-name">Sahil Jangra</div>
+                    <div class="team-role">Technical Support Agent</div>
+                    <div class="team-bio">Sahil works behind the scenes, resolving login issues, code delivery problems, and ensuring users get fast, reliable help anytime.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS (Shared) -->
+    <script src="js/script.js"></script>
+    
+    <!-- Page Specific Animations -->
+    <script>
+        // Page specific GSAP Animations
+        gsap.from('.about-content', {
+            duration: 0.8,
+            x: -50,
+            opacity: 0,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.about-section',
+                start: 'top 80%'
+            }
+        });
+
+        gsap.from('.about-image', {
+            duration: 0.8,
+            x: 50,
+            opacity: 0,
+            delay: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.about-section',
+                start: 'top 80%'
+            }
+        });
+
+        gsap.from('.milestone-card', {
+            duration: 0.6,
+            y: 30,
+            opacity: 0,
+            stagger: 0.1,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.milestone-grid',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+
+        gsap.from('.team-card', {
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.team-section',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    </script>
+</body>
+</html>

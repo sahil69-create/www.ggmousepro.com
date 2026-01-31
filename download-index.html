@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Mouse Pro - Download</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.dl.dropboxusercontent.com/scl/fi/3omcfq74pwvm4v0x6z6f0/GG-Mouse-Pro.png?rlkey=d1dtq8gjq0699aibzwlyfxzyv&st=st3zncw9&dl=0" alt="GG Mouse Pro Logo" width="60">
+            GG Mouse Pro 2
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about-index.html">About</a>
+            <a href="features-index.html">Features</a>
+            <a href="tournaments-index.html">Tournaments</a>
+            <a href="tutorials-index.html">Tutorials</a>
+            <a href="download-index.html">Download</a>
+            <a href="contact-index.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container block-layout">
+        <div class="text-section">
+            <div class="heading">Download GG Mouse Pro</div>
+            <div class="subheading">
+                Use this app with your mouse and keyboard to play games on your phone. This app is the most advanced and the most powerful of all keyboard and mouse converters app and completely free!
+            </div>
+        </div>
+
+        <div class="download-grid">
+            <div class="download-section">
+                <div class="download-title">Android APK</div>
+                <div class="qr-container" id="androidQR"></div>
+                <p>Scan QR code or click below to download</p>
+                <a href="https://play.google.com/store/apps/details?id=com.zjx.ztezscreenshot&hl=en_IN&pli=1" class="download-button">Download APK</a>
+            </div>
+
+            <div class="download-section">
+                <div class="download-title">iOS App</div>
+                <div class="qr-container" id="iosQR"></div>
+                <p>Scan QR code or click below to download</p>
+                <a href="#" class="download-button">Download on App Store</a>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <div class="reviews-title">User Reviews</div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-name">THANS DISCUS</div>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-text">
+                    "The best key mapping. This is mainly for people who don't have money to buy a gaming laptop or pc 😭 and we just need a keyboard, mouse, OTG and usb hub and the process are very very easy and not need to suffer and now I can play all my games in a keyboard and mouse instead of spending so much money to buy and it gives experience of playing in laptop or pc.Thank you GG Mouse Pro 2.🤩🥰"
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-name">Jabir Iqbal</div>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-text">
+                    "This is the killer of all converter and other apps. Before when I used other apps and converters, I faced so many problems like : auto sensitivity high and low, all buttons didn't work in gaming mouse, mouse cursor hide and show was not possible in one click, mouse cursor size wasn't adjustable. Now GG Mouse Pro solves all of those problems. Infact it has real time FPS meter which shows the real FPS all time. GG means Good Game. And this always feels me good while I'm playing games."
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-name">Souji Yamato</div>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="review-text">
+                    "This is the best emulator for keyboard and mouse, it is tweaked to everything you need and has so many options. I once got my phone formatted for a reason and when I installed this app once again my mapping of the buttons was still the same. Meaning it is integrated to the serial number of the phone, many people don't realize how much of a game changer this app is. Thank you to the developers and creators of this app, and it's also free. Will always be my best pick for an emulator."
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Generate QR Codes
+        new QRCode(document.getElementById('androidQR'), {
+            text: 'https://example.com/android-download',
+            width: 128,
+            height: 128
+        });
+
+        new QRCode(document.getElementById('iosQR'), {
+            text: 'https://example.com/ios-download',
+            width: 128,
+            height: 128
+        });
+
+        // GSAP Animations
+        gsap.from('.heading', {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.subheading', {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            delay: 0.3,
+            ease: 'power3.out'
+        });
+
+        gsap.from('.download-section', {
+            duration: 0.8,
+            y: 100,
+            opacity: 0,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.download-grid',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+
+        gsap.from('.review-card', {
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.reviews-section',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    </script>
+</body>
+</html>
